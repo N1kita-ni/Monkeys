@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F01B5157269DFB8100CEFE9B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B5156269DFB8100CEFE9B /* ImageViewController.swift */; };
+		F01B5159269E1E3700CEFE9B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B5158269E1E3700CEFE9B /* CustomTableViewCell.swift */; };
 		F05AFB402682421A0079B6A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05AFB3F2682421A0079B6A9 /* AppDelegate.swift */; };
 		F05AFB422682421A0079B6A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05AFB412682421A0079B6A9 /* ViewController.swift */; };
 		F05AFB452682421A0079B6A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05AFB432682421A0079B6A9 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		F01B5156269DFB8100CEFE9B /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		F01B5158269E1E3700CEFE9B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		F05AFB3C2682421A0079B6A9 /* UIPickerMonkeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPickerMonkeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05AFB3F2682421A0079B6A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F05AFB412682421A0079B6A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				F05AFB3F2682421A0079B6A9 /* AppDelegate.swift */,
 				F05AFB412682421A0079B6A9 /* ViewController.swift */,
 				F05AFB432682421A0079B6A9 /* Main.storyboard */,
+				F01B5158269E1E3700CEFE9B /* CustomTableViewCell.swift */,
 				F01B5156269DFB8100CEFE9B /* ImageViewController.swift */,
 				F05AFB462682421B0079B6A9 /* Assets.xcassets */,
 				F05AFB482682421B0079B6A9 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F01B5159269E1E3700CEFE9B /* CustomTableViewCell.swift in Sources */,
 				F05AFB422682421A0079B6A9 /* ViewController.swift in Sources */,
 				F05AFB402682421A0079B6A9 /* AppDelegate.swift in Sources */,
 				F01B5157269DFB8100CEFE9B /* ImageViewController.swift in Sources */,

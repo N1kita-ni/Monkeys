@@ -36,39 +36,57 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iU6-xv-QHe">
-                                <rect key="frame" x="0.0" y="367" width="375" height="301"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iU6-xv-QHe">
+                                <rect key="frame" x="0.0" y="389" width="375" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="8Ha-RU-5ob" style="IBUITableViewCellStyleDefault" id="JED-tz-6WG">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="JED-tz-6WG" customClass="CustomTableViewCell" customModule="UIPickerMonkeys" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JED-tz-6WG" id="iK9-VE-UuD">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Ha-RU-5ob">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcJ-yO-ZNR">
+                                                    <rect key="frame" x="15" y="10" width="48" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6O-C5-cfN">
+                                                    <rect key="frame" x="322.5" y="13" width="37.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="b6O-C5-cfN" secondAttribute="trailing" constant="15" id="53Y-HS-Vd0"/>
+                                                <constraint firstItem="b6O-C5-cfN" firstAttribute="centerY" secondItem="iK9-VE-UuD" secondAttribute="centerY" id="7vE-94-WW6"/>
+                                                <constraint firstItem="hcJ-yO-ZNR" firstAttribute="centerY" secondItem="iK9-VE-UuD" secondAttribute="centerY" id="D6r-mc-zfH"/>
+                                                <constraint firstItem="hcJ-yO-ZNR" firstAttribute="leading" secondItem="iK9-VE-UuD" secondAttribute="leading" constant="15" id="msL-4H-9FG"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="monkeysArea" destination="b6O-C5-cfN" id="KBN-8O-6Su"/>
+                                            <outlet property="monkeysNameLabel" destination="hcJ-yO-ZNR" id="OGa-CH-bbc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iU6-xv-QHe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9FN-yf-A0A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iU6-xv-QHe" secondAttribute="trailing" id="EHg-5y-FTi"/>
+                            <constraint firstItem="iU6-xv-QHe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="2" id="J9F-dC-QT9"/>
                             <constraint firstItem="VH8-Gw-gYZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="L9o-XK-Jfo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VH8-Gw-gYZ" secondAttribute="trailing" constant="10" id="Ly2-qW-VPy"/>
                             <constraint firstItem="uST-n3-zVq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="PRM-B8-duR"/>
                             <constraint firstItem="uST-n3-zVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="RPI-3N-2HD"/>
                             <constraint firstItem="lbf-X9-QVK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="X25-IB-Y6B"/>
                             <constraint firstItem="VH8-Gw-gYZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="XA0-MQ-mWm"/>
+                            <constraint firstItem="iU6-xv-QHe" firstAttribute="top" secondItem="VH8-Gw-gYZ" secondAttribute="bottom" constant="8.5" id="Z1p-xH-SjE"/>
                             <constraint firstItem="VH8-Gw-gYZ" firstAttribute="top" secondItem="lbf-X9-QVK" secondAttribute="bottom" constant="10" id="eoQ-sy-asZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lbf-X9-QVK" secondAttribute="trailing" constant="249" id="l2v-aX-WEJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uST-n3-zVq" secondAttribute="trailing" constant="10" id="xoQ-Iy-sbn"/>
